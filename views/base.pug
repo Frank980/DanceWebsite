@@ -1,0 +1,20 @@
+doctype html 
+html
+  head
+    title BBDA
+    block style
+    block scripts
+  body
+    nav#navbar 
+           ul 
+             div#logo 
+                 img(src='/static/logo.png')
+                 | BBDA
+             li #[a(href="/") Home]
+             li #[a(href="/") About-us]
+             li #[a(href="/") Slots-available]
+             li #[a(href="/") Feedback]
+             li #[a(href="/contact") Contact Us]
+    block content
+    block foot
+      

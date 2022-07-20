@@ -1,0 +1,41 @@
+extends base.pug
+
+block style 
+    style 
+          include ../static/style.css 
+
+block scripts
+    script(src='/static/index.js')
+
+block content
+            
+    section#introsection
+          h1#inth1 Welcome to Beatbusters dance academy
+          p#p1int "Dance is the expression of emotions"
+    section#mission
+          h3 Available slots 
+          div.card
+              h3 Hip-Hop
+              div.card-box
+                div.card-image
+                     img(src='/static/hiphop.png')
+                div.card-content 
+                    p Specially trained instructors are assigned to everyone
+                    //- p Tue : 4:00pm to 8:00 pm
+                    //- p Fri : 6:00pm to 8:00pm
+          div.card
+              h3 Ballet
+              div.card-box
+                div.card-image
+                     img(src='/static/ballet.png')
+                div.card-content 
+                    p Specially trained instructors are assigned to everyone
+                    //- p Tue : 4:00pm to 8:00 pm
+                    //- p Fri : 6:00pm to 8:00pm
+          div.card
+              h3 Break dance
+              div.card-box
+                div.card-image
+                    img(src='/static/breakdance.png')
+                div.card-content 
+                    p Specially trained instructors are assigned to everyone

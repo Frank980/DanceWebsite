@@ -1,0 +1,56 @@
+doctype html 
+html 
+    head 
+        title BBDA
+        style 
+          include ../static/style.css 
+    body 
+        nav#navbar 
+           ul 
+             div#logo 
+                 img(src='/static/logo.png')
+                 | BBDA
+             li #[a(href="/") Home]
+             li #[a(href="/") About-us]
+             li #[a(href="/") Slots-available]
+             li #[a(href="/") Feedback]
+             li #[a(href="/contact") Contact Us]
+            
+        section#introsection
+              h1#inth1 Welcome to Beatbusters dance academy
+              p#p1int "Dance is the expression of emotions"
+        section#mission
+              h3 Available slots 
+              div.card
+                  h3 Hip-Hop
+                  div.card-box
+                    div.card-image
+                         img(src='/static/hiphop.png')
+                    div.card-content 
+                        p Specially trained instructors are assigned to everyone
+                        //- p Tue : 4:00pm to 8:00 pm
+                        //- p Fri : 6:00pm to 8:00pm
+              div.card
+                  h3 Ballet
+                  div.card-box
+                    div.card-image
+                         img(src='/static/ballet.png')
+                    div.card-content 
+                        p Specially trained instructors are assigned to everyone
+                        //- p Tue : 4:00pm to 8:00 pm
+                        //- p Fri : 6:00pm to 8:00pm
+              div.card
+                  h3 Break dance
+                  div.card-box
+                    div.card-image
+                        img(src='/static/breakdance.png')
+                    div.card-content 
+                        p Specially trained instructors are assigned to everyone 
+                        //- p Tue : 4:00pm to 8:00 pm
+                        //- p Fri : 6:00pm to 8:00pm
+        section#sponsorsection 
+              | for sponsors
+        footer#footer
+              | footer here 
+        script
+          include ../static/index.js 
